@@ -1,7 +1,5 @@
 FROM php:7.2-apache
 LABEL "Author" = "Abarna"
+COPY src/ /var/www/html/
 
-RUN rm -rf /var/www/*
-COPY php-crud-with-mysqli/ /var/wwww
 
-EXPOSE 80
