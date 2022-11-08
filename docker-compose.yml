@@ -1,0 +1,10 @@
+version: "3" #docker version
+services:
+  php-apache:
+    image: FROM php:7.2-apache
+    volumes:
+      - "./:var/www/html"  #sync between host and container
+    ports: 
+      - "80:80"
+      - "443:443" 
+    
