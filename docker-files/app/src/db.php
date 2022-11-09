@@ -1,3 +1,2 @@
 <?php
-	$conn = mysqli_connect("db","php_docker","password","users");
-?>
+	$conn = mysqli_connect("mysql","php_docker","dbpassword","users");
